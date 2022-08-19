@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --Violet: hsl(257, 40%, 49%);  
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: var(--Violet);
+    background-size: contain;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.image-logo {
+    display: flex;
+    flex-direction: column;
+}
+.main-img {
+    max-width: 90%;
+    margin-top: 4.25rem;
+    align-self: center;
+}
+.logo {
+    align-self: flex-start;
+    width: 40%;
+    margin-left: 1rem;
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+    margin-top: 4rem;
+    max-width: 400px;
+    align-self: center;
+    
+}
+.description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.125rem;
+    margin: 1.5rem auto;
+    max-width: 550px;
+    text-align: center;
+}
+button {
+    color: var(--Violet);
+    padding: 0.75rem 5.5rem;
+    align-self: center;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 2px 5px 5px #363636;
+
+}
+button:hover {
+    cursor: pointer;
+    background-color: var(--Soft-Magenta);
+    color: white;
+}
+
+.icons {
+    align-self: center;
+    margin-top: 5rem;
+}
+
+.fa-brands {
+    padding: 0.6rem;
+    font-size: 1.3rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    text-align: center;
+    margin: 0 0.5rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+}
+.fa-brands:hover {
+    cursor: pointer;
+    color: var(--Soft-Magenta);
+    border: 1px solid hsl(300, 69%, 71%);
+    border-radius: 50%;
+}
+
+@media (min-width:900px) {
+    
+    body {
+        background-image: url(./images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-color: var(--Violet);
+        background-size: cover;
+        min-height: 100vh;
+        }
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        gap: 3rem;
+        margin-top: 3.85rem;
+    }
+   
+    .main-img {
+        max-width: 100%;
+    }
+    .logo {
+        max-width: 32.5%;
+    }
+    .content {
+        align-self: flex-end;
+    }
+    .heading {
+        text-align: left;
+        align-self: flex-start;
+        font-size: 2.2rem;
+    }
+    .description {
+        text-align: left;
+        font-size: 1.5rem;
+        max-width: 700px;
+    }
+    button {
+        align-self: flex-start;
+        padding: 0.75rem 4rem;
+    }
+    .icons {
+        align-self: flex-end;
+        
+    }
+
+
+    
+        
+}
